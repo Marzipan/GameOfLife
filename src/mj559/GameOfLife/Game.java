@@ -15,6 +15,7 @@ public class Game {
 		CellGrid shadow = new CellGrid(grid);
 		
 				
+		//Apply the standard GoL rules to populate the new board
 		for(int r = 1; r < grid.getSize() - 1; r++){
 			for(int c = 1; c < grid.getSize() - 1; c++){
 				int tot = countNeighbours(r, c);
